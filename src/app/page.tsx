@@ -1,3 +1,9 @@
+import Link from "next/link";
+
 export default function Home() {
-  return <main>Front page</main>;
+  return (
+    <div>
+      <Link href="/editor">Editor</Link>
+    </div>
+  );
 }
