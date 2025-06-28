@@ -26,14 +26,14 @@ export default function GeneralInfoForm({
     },
   });
 
-  useEffect(() => {
-    const { unsubscribe } = form.watch(async (values) => {
-      const isValid = await form.trigger();
-      if (!isValid) return;
-      setResumeData({ ...resumeData, ...values });
-    });
-    return unsubscribe;
-  }, [form, resumeData, setResumeData]);
+  // useEffect(() => {
+  //   const { unsubscribe } = form.watch(async (values) => {
+  //     const isValid = await form.trigger();
+  //     if (!isValid) return;
+  //     setResumeData({ ...resumeData, ...values });
+  //   });
+  //   return unsubscribe;
+  // }, [form, resumeData, setResumeData]);
 
   return (
     <div className="mx-auto max-w-xl space-y-6">
